@@ -1,0 +1,183 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+/* Общие стили */
+body {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.about, .focus {
+  max-width: 1170px;
+}
+h2 {
+  font-family: 'Roboto-Light', Times, sans-serif;
+  font-size: 64px;
+  line-height: 64px;
+  color: #BDBDBD;
+}
+.link-container{
+  max-width: 222px;
+}
+.link-clickable {
+  font-family: 'Roboto-Regular', Times, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.arrow {
+  font-size: 1.5em;
+}
+
+
+/* Стили для header */
+
+
+/* Стили для project lorem */
+
+
+/* Стили для about */
+.about {
+  margin: 120px auto 120px auto;
+  background: linear-gradient(to bottom, #FBFBFB 94%, transparent 6%);
+  border-top: 1px solid #FBFBFB;
+}
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.about-images {
+  display: flex;
+  margin-left: 100px;
+  gap: 30px;
+}
+.about-images__items {
+  display: flex;
+  flex-direction: column;
+  max-height: 435px;
+  justify-content: space-between;
+}
+.about-images__item1, .about-images__item2 {
+  max-width: 100%;
+  height: auto;
+}
+.about-images__item3 {
+  margin: 30px 0 60px;
+  max-width: 100%;
+  height: auto;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 34%;
+  margin: 0px 70px 60px 30px;
+}
+.about-info__text {
+  max-width: 400px;
+  font-family: 'Roboto-Light', Times, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 20px 0 52px 0;
+}
+.about-link {
+  background-color: white;
+}
+.about-link__item-text {
+  display: flex;
+  gap: 13px;
+  padding: 24px 0px 23px 35px;
+  color: #333333;
+}
+
+
+/* Стили для main focus  */
+.focus {
+  margin: 0 auto 120px auto;
+}
+.focus-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.focus-section__first, .focus-section__second {
+  display: flex;
+  max-width: 413px;
+  gap: 30px;
+}
+.focus-section__second {
+  max-width: 570px;
+}
+.focus-section__number-1, .focus-section__number-2 {
+  padding: 0 10px 0 10px;
+}
+.focus-section__text {
+  font-family: 'Roboto-Regular', Times, sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+}
+
+/* Медиа-запросы для блока about и focus */
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+  .about, .focus {
+    margin: 120px 135px 120px 135px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1300px) {
+  .about, .focus {
+    margin: 120px 135px 120px 135px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-images {
+    width: 80%;
+  }
+  .about-info {
+    max-width: 80%;
+    margin: 30px 70px 60px 100px;
+  }
+  .about-info__text {
+    max-width: 100%;
+  }
+  .focus-section {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .focus-section__first {
+    margin-bottom: 20px;
+  }
+  .focus-section__first, .focus-section__second {
+    max-width: 90%;
+    gap: 0;
+    align-items: center;
+  }
+  .focus-section__number-1 {
+    padding-right: 35px;
+  }
+  .focus-img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+
+/* Стили для our projects */
+
+/* Стили для contact us  */
+
+/* Стили для footer */
+
