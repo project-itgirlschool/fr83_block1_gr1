@@ -176,8 +176,87 @@ h2 {
 
 
 /* Стили для our projects */
+.our_project {
+  margin-left: 120px;
+  margin-right: 80px;
+  padding-left: 20px;
+  padding: 30px;
+  gap: 20px;
+}
 
+.btn btn-lg btn-secondary {
+  font-size: smaller;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.first {
+  width: 490px;
+  height: 250px;
+}
+
+.second {
+  width: 490px;
+  height: 250px;
+}
+
+.third {
+  width: 250px;
+  height: 250px;
+}
+
+.forth {
+  width: 450px;
+  height: 250px;
+}
+
+.fifth {
+  width: 270px;
+  height: 250px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 490px;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 490px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+}
 /* Стили для contact us  */
+.contact {
+  gap: 40px 40px;
+  padding: 40px;
+}
+
+.form-control {
+  color: F3F3F3;
+}
+
+.img-contact {
+  width: 600px;
+  height: 360px;
+}
 
 /* Стили для footer */
 
