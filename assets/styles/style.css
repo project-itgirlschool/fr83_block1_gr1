@@ -34,7 +34,10 @@ h2 {
   line-height: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+.link-clickable:hover {
   text-decoration: none;
+  color: inherit;
 }
 .arrow {
   font-size: 1.5em;
@@ -67,7 +70,7 @@ h2 {
   display: flex;
   flex-direction: column;
   max-height: 435px;
-  justify-content: space-between;
+  gap: 30px;
 }
 .about-images__item1, .about-images__item2 {
   max-width: 100%;
@@ -132,23 +135,68 @@ h2 {
 /* Медиа-запросы для блока about и focus */
 @media screen and (min-width: 1301px) and (max-width: 1400px) {
   .about, .focus {
-    margin: 120px 135px 120px 135px;
+    margin: 120px 135px;
   }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1300px) {
+@media screen and (min-width: 992px) and (max-width: 1300px) {
   .about, .focus {
-    margin: 120px 135px 120px 135px;
+    margin: 120px 135px;
   }
   .about-wrapper {
     flex-direction: column;
   }
   .about-images {
-    width: 80%;
+    max-width: 70%;
+    justify-content: space-between;
+    gap: 30px;
   }
   .about-info {
     max-width: 80%;
     margin: 30px 70px 60px 100px;
+  }
+  .about-info__text {
+    max-width: 100%;
+  }
+  .focus-section {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .focus-section__first {
+    margin-bottom: 20px;
+  }
+  .focus-section__first, .focus-section__second {
+    max-width: 90%;
+    gap: 0;
+    align-items: center;
+  }
+  .focus-section__number-1 {
+    padding-right: 35px;
+  }
+  .focus-img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about, .focus {
+    margin: 20px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-images {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .about-images__items {
+    display: none;
+  }
+  .about-info {
+    max-width: 100%;
+    margin-right: 30px;
+    text-align: center;
   }
   .about-info__text {
     max-width: 100%;
