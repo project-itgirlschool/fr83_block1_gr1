@@ -177,11 +177,10 @@ h2 {
 
 /* Стили для our projects */
 .our_project {
-  margin-left: 120px;
+  margin-left: 80px;
   margin-right: 80px;
-  padding-left: 20px;
-  padding: 30px;
-  gap: 20px;
+  padding: 10px;
+  gap: 10px;
 }
 
 .btn btn-lg btn-secondary {
@@ -194,27 +193,27 @@ h2 {
   padding-top: 20px;
 }
 
-.first {
+.first img-fluid {
   width: 490px;
   height: 250px;
 }
 
-.second {
+.second img-fluid {
   width: 490px;
   height: 250px;
 }
 
-.third {
+.third img-fluid {
   width: 250px;
   height: 250px;
 }
 
-.forth {
+.forth img-fluid {
   width: 450px;
   height: 250px;
 }
 
-.fifth {
+.fifth img-fluid {
   width: 270px;
   height: 250px;
 }
@@ -244,10 +243,6 @@ h2 {
   font-size: 24px;
 }
 /* Стили для contact us  */
-.contact {
-  gap: 40px 40px;
-  padding: 40px;
-}
 
 .form-control {
   color: F3F3F3;
@@ -258,5 +253,34 @@ h2 {
   height: 360px;
 }
 
+/* Медиа-запросы для блока our project и contact us */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .our_project, .contact {
+    margin: 120px 135px 120px 135px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .our_project, .contact {
+    margin: 20px 35px 20px 35px;
+}
+.container text-center {
+  display: flex;
+  flex-direction: column;
+}
+  .img-contact {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .image-container, .overlay, .text-overlay, .first img-fluid {
+    max-width: 300px;
+    height: 250px;
+  }
+  .img-contact {
+    width: auto;
+  }
+}
 /* Стили для footer */
 
